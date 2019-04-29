@@ -1,0 +1,38 @@
+{
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "node node_modules/jest/bin/jest.js",
+    "lint": "tslint src/**/*.ts",
+    "tsc": "tsc",
+    "clean": "rimraf build",
+    "build": "yarn run clean && yarn run tsc --",
+    "watch": "yarn run build -- -w",
+    "watchAndRunAndroid": "concurrently \"yarn run watch\" \"yarn run android\"",
+    "buildRunAndroid": "yarn run build && yarn run watchAndRunAndroid ",
+    "watchAndRunIOS": "concurrently \"yarn run watch\" \"yarn run ios\"",
+    "buildRunIOS": "yarn run build && yarn run watchAndRunIOS ",
+    "watchAndStart": "concurrently \"yarn run watch\" \"yarn run start\"",
+    "buildAndStart": "yarn run build && yarn run watchAndStart "
+  },
+  "dependencies": {
+    "expo": "^31.0.2",
+    "react": "^16.6.3",
+    "react-native": "^0.57.7"
+  },
+  "devDependencies": {
+    "@types/expo": "^31.0.1",
+    "@types/react": "^16.8.14",
+    "@types/react-native": "^0.57.15",
+    "babel-preset-expo": "^5.0.0",
+    "concurrently": "^4.1.0",
+    "react-native-scripts": "^2.0.1",
+    "rimraf": "^2.6.3",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  },
+  "private": true
+}
