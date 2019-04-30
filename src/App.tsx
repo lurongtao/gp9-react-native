@@ -4,7 +4,7 @@ import Home from './pages/home/Home'
 import HotList from './pages/hotlist/HotList'
 
 import { Provider } from 'mobx-react'
-import store from './store/'
+import {list, more} from './store/'
 
 import { 
   createStackNavigator, 
@@ -34,7 +34,7 @@ const AppNavigator = createStackNavigator(
 let Nav = createAppContainer(AppNavigator)
 
 export default () => (
-  <Provider store={store}>
+  <Provider store={{list, more}} more={more}>
     <Nav></Nav>
   </Provider>
 )

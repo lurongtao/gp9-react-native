@@ -41,7 +41,7 @@ export default class CookBook extends Component<Props, State> {
             showsPagination={false}
           >
             {
-              this.props.store.list.slice(0, 5).map((value: any) => {
+              this.props.store.list.list.slice(0, 5).map((value: any) => {
                 return (
                   <View style={styles.swiperSlide} key={value.id}>
                     <Image source={{uri: value.img}} style={{width: '100%', height: '100%'}}></Image>
@@ -89,6 +89,6 @@ export default class CookBook extends Component<Props, State> {
   }
 
   _onPressHotCate(i: string) {
-    this.props.navigation.navigate('HotList', {i})
+    this.props.navigation.navigate('HotList', {id: i})
   }
 }

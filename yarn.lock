@@ -825,10 +825,10 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@expo/vector-icons@^8.0.0":
-  version "8.1.0"
-  resolved "https://registry.npm.taobao.org/@expo/vector-icons/download/@expo/vector-icons-8.1.0.tgz#2a70d8d4a8b74f275063bcb2087e8b276a579955"
-  integrity sha1-KnDY1Ki3TydQY7yyCH6LJ2pXmVU=
+"@expo/vector-icons@~9.0.0":
+  version "9.0.0"
+  resolved "https://registry.npm.taobao.org/@expo/vector-icons/download/@expo/vector-icons-9.0.0.tgz#7f18e21d3edc8b99b76d7d1b8e26b212393e08b3"
+  integrity sha1-fxjiHT7ci5m3bX0bjiayEjk+CLM=
   dependencies:
     lodash "^4.17.4"
     react-native-vector-icons "6.0.0"
@@ -863,14 +863,16 @@
     react-native-safe-area-view "^0.13.0"
     react-native-screens "^1.0.0 || ^1.0.0-alpha"
 
-"@types/expo@^31.0.1":
-  version "31.0.13"
-  resolved "https://registry.npm.taobao.org/@types/expo/download/@types/expo-31.0.13.tgz#209ef58e02f839d06c24def103d9f9d0002c22f1"
-  integrity sha1-IJ71jgL4OdBsJN7xA9n50AAsIvE=
+"@types/expo@^32.0.11":
+  version "32.0.11"
+  resolved "https://registry.npm.taobao.org/@types/expo/download/@types/expo-32.0.11.tgz#b13fe196ec8002636c0a1cefc05d36e1d82c6448"
+  integrity sha1-sT/hluyAAmNsChzvwF024dgsZEg=
   dependencies:
     "@types/fbemitter" "*"
     "@types/react" "*"
     "@types/react-native" "*"
+    react-native-maps "*"
+    react-native-svg "*"
 
 "@types/fbemitter@*", "@types/fbemitter@^2.0.32":
   version "2.0.32"
@@ -912,7 +914,7 @@
     "@types/react" "*"
     "@types/react-native" "*"
 
-"@types/react-native@*", "@types/react-native@^0.57.15":
+"@types/react-native@*":
   version "0.57.50"
   resolved "https://registry.npm.taobao.org/@types/react-native/download/@types/react-native-0.57.50.tgz#b809960e0ce70190f8082d050bb2aa99b5ee4db2"
   integrity sha1-uAmWDgznAZD4CC0FC7KqmbXuTbI=
@@ -920,10 +922,26 @@
     "@types/prop-types" "*"
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.8.14":
+"@types/react-native@^0.57.51":
+  version "0.57.51"
+  resolved "https://registry.npm.taobao.org/@types/react-native/download/@types/react-native-0.57.51.tgz#adcb02141734b72822848351be734971e508f5f1"
+  integrity sha1-rcsCFBc0tygihINRvnNJceUI9fE=
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/react" "*"
+
+"@types/react@*":
   version "16.8.14"
   resolved "https://registry.npm.taobao.org/@types/react/download/@types/react-16.8.14.tgz#b561bfabeb8f60d12e6d4766367e7a9ae927aa18"
   integrity sha1-tWG/q+uPYNEubUdmNn56muknqhg=
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
+
+"@types/react@^16.8.15":
+  version "16.8.15"
+  resolved "https://registry.npm.taobao.org/@types/react/download/@types/react-16.8.15.tgz#a76515fed5aa3e996603056f54427fec5f2a5122"
+  integrity sha1-p2UV/tWqPplmAwVvVEJ/7F8qUSI=
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
@@ -955,6 +973,26 @@ accepts@~1.3.3, accepts@~1.3.5:
   dependencies:
     mime-types "~2.1.18"
     negotiator "0.6.1"
+
+ajv-errors@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.npm.taobao.org/ajv-errors/download/ajv-errors-1.0.1.tgz#f35986aceb91afadec4102fbd85014950cefa64d"
+  integrity sha1-81mGrOuRr63sQQL72FAUlQzvpk0=
+
+ajv-keywords@^3.1.0:
+  version "3.4.0"
+  resolved "https://registry.npm.taobao.org/ajv-keywords/download/ajv-keywords-3.4.0.tgz#4b831e7b531415a7cc518cd404e73f6193c6349d"
+  integrity sha1-S4Mee1MUFafMUYzUBOc/YZPGNJ0=
+
+ajv@^6.1.0:
+  version "6.10.0"
+  resolved "https://registry.npm.taobao.org/ajv/download/ajv-6.10.0.tgz#90d0d54439da587cd7e843bfb7045f50bd22bdf1"
+  integrity sha1-kNDVRDnaWHzX6EO/twRfUL0ivfE=
+  dependencies:
+    fast-deep-equal "^2.0.1"
+    fast-json-stable-stringify "^2.0.0"
+    json-schema-traverse "^0.4.1"
+    uri-js "^4.2.2"
 
 ansi-colors@^1.0.1:
   version "1.1.0"
@@ -1264,6 +1302,11 @@ big-integer@^1.6.7:
   version "1.6.43"
   resolved "https://registry.npm.taobao.org/big-integer/download/big-integer-1.6.43.tgz#8ac15bf13e93e509500859061233e19d8d0d99d1"
   integrity sha1-isFb8T6T5QlQCFkGEjPhnY0NmdE=
+
+big.js@^5.2.2:
+  version "5.2.2"
+  resolved "https://registry.npm.taobao.org/big.js/download/big.js-5.2.2.tgz#65f0af382f578bcdc742bd9c281e9cb2d7768328"
+  integrity sha1-ZfCvOC9Xi83HQr2cKB6cstd2gyg=
 
 bplist-creator@0.0.7:
   version "0.0.7"
@@ -1825,6 +1868,11 @@ electron-to-chromium@^1.3.124:
   resolved "https://registry.npm.taobao.org/electron-to-chromium/download/electron-to-chromium-1.3.127.tgz#9b34d3d63ee0f3747967205b953b25fe7feb0e10"
   integrity sha1-mzTT1j7g83R5ZyBblTsl/n/rDhA=
 
+emojis-list@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.npm.taobao.org/emojis-list/download/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
+  integrity sha1-TapNnbAPmBmIDHn6RXrlsJof04k=
+
 encodeurl@~1.0.1, encodeurl@~1.0.2:
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/encodeurl/download/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
@@ -1959,267 +2007,313 @@ expand-range@^1.8.1:
   dependencies:
     fill-range "^2.1.0"
 
-expo-ads-admob@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-ads-admob/download/expo-ads-admob-1.1.0.tgz#817074620e55b930901fe20e9e41773ba85db97b"
-  integrity sha1-gXB0Yg5VuTCQH+IOnkF3O6hduXs=
+expo-ads-admob@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-ads-admob/download/expo-ads-admob-2.0.0.tgz#53b78a5ac5eee4f306ff461256160990ab96936b"
+  integrity sha1-U7eKWsXu5PMG/0YSVhYJkKuWk2s=
   dependencies:
     prop-types "^15.6.2"
 
-expo-analytics-segment@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-analytics-segment/download/expo-analytics-segment-1.1.0.tgz#d4f9591ebb542ea70e9d3ac23a5d97ead79dfb5d"
-  integrity sha1-1PlZHrtULqcOnTrCOl2X6ted+10=
+expo-analytics-segment@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-analytics-segment/download/expo-analytics-segment-2.0.0.tgz#5b957c97729b688825f58b39bba09463622e8d3f"
+  integrity sha1-W5V8l3KbaIgl9Ys5u6CUY2IujT8=
   dependencies:
-    expo-core "~1.2.0"
+    expo-core "~2.0.0"
 
-expo-asset@~1.1.1:
-  version "1.1.1"
-  resolved "https://registry.npm.taobao.org/expo-asset/download/expo-asset-1.1.1.tgz#f1957b39a120bd9177f1fad9b8e2a20dd3746e86"
-  integrity sha1-8ZV7OaEgvZF38frZuOKiDdN0boY=
+expo-app-auth@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-app-auth/download/expo-app-auth-2.0.0.tgz#434d1a16f62a298b9ed1eff6cc6a464d1d29440f"
+  integrity sha1-Q00aFvYqKYue0e/2zGpGTR0pRA8=
   dependencies:
-    expo-core "~1.2.0"
+    expo-constants-interface "~2.0.0"
+    expo-core "~2.0.0"
+
+expo-app-loader-provider@~1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/expo-app-loader-provider/download/expo-app-loader-provider-1.0.0.tgz#62dae0d6e2829d51b168a973b03bc8a3a8ac78d3"
+  integrity sha1-Ytrg1uKCnVGxaKlzsDvIo6iseNM=
+  dependencies:
+    expo-core "~2.0.0"
+
+expo-asset@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-asset/download/expo-asset-2.0.0.tgz#c4a1d44ccf1d321b505e437d1582dd2d382995e2"
+  integrity sha1-xKHUTM8dMhtQXkN9FYLdLTgpleI=
+  dependencies:
     uri-parser "^1.0.1"
     url-join "^4.0.0"
+    url-loader "^1.1.2"
 
-expo-barcode-scanner-interface@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-barcode-scanner-interface/download/expo-barcode-scanner-interface-1.1.0.tgz#37f31334b50475b34a9149f04493574c0b1fed98"
-  integrity sha1-N/MTNLUEdbNKkUnwRJNXTAsf7Zg=
-
-expo-barcode-scanner@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-barcode-scanner/download/expo-barcode-scanner-1.1.0.tgz#a54ea31f1e5b3157afc11c7d676c2f886700be6c"
-  integrity sha1-pU6jHx5bMVevwRx9Z2wviGcAvmw=
+expo-background-fetch@~1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/expo-background-fetch/download/expo-background-fetch-1.0.0.tgz#d84dfd001c2fc71b233de14ccd6a110b07f9e705"
+  integrity sha1-2E39ABwvxxsjPeFMzWoRCwf55wU=
   dependencies:
-    expo-barcode-scanner-interface "~1.1.0"
+    expo-task-manager "~1.0.0"
+
+expo-barcode-scanner-interface@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-barcode-scanner-interface/download/expo-barcode-scanner-interface-2.0.0.tgz#3d5c7855511a783628baf9fd827f94770854ca12"
+  integrity sha1-PVx4VVEaeDYouvn9gn+UdwhUyhI=
+
+expo-barcode-scanner@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-barcode-scanner/download/expo-barcode-scanner-2.0.0.tgz#0b06c81a4457bc9c1c34f3423acf757dea6ac638"
+  integrity sha1-CwbIGkRXvJwcNPNCOs91fepqxjg=
+  dependencies:
+    expo-barcode-scanner-interface "~2.0.0"
     lodash.mapvalues "^4.6.0"
     prop-types "^15.6.0"
 
-expo-camera-interface@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-camera-interface/download/expo-camera-interface-1.1.0.tgz#60b1e9c0a7ce68726929cd1504a61caa0b81ff65"
-  integrity sha1-YLHpwKfOaHJpKc0VBKYcqguB/2U=
+expo-camera-interface@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-camera-interface/download/expo-camera-interface-2.0.0.tgz#d6de1aa6bd9626146a174911949fa801abb5de7e"
+  integrity sha1-1t4apr2WJhRqF0kRlJ+oAau13n4=
   dependencies:
-    expo-core "~1.2.0"
+    expo-core "~2.0.0"
 
-expo-camera@~1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npm.taobao.org/expo-camera/download/expo-camera-1.2.0.tgz#93cbbc73285378572cb4ca55041743e2d77235f7"
-  integrity sha1-k8u8cyhTeFcstMpVBBdD4tdyNfc=
+expo-camera@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-camera/download/expo-camera-2.0.0.tgz#ea55105970eff1b5ad858de156fee36b6e5bb632"
+  integrity sha1-6lUQWXDv8bWthY3hVv7ja25btjI=
   dependencies:
-    expo-barcode-scanner-interface "~1.1.0"
-    expo-camera-interface "~1.1.0"
-    expo-core "~1.2.0"
-    expo-face-detector-interface "~1.1.0"
-    expo-file-system-interface "~1.1.0"
-    expo-permissions-interface "~1.2.0"
     lodash.mapvalues "^4.6.0"
     prop-types "^15.6.0"
 
-expo-constants-interface@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-constants-interface/download/expo-constants-interface-1.1.0.tgz#7186a466d12050d3e984225d2d164e19d93f3e37"
-  integrity sha1-cYakZtEgUNPphCJdLRZOGdk/Pjc=
+expo-constants-interface@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-constants-interface/download/expo-constants-interface-2.0.0.tgz#9cccb024d8e1b6a8fa765882456ba89afb57d03b"
+  integrity sha1-nMywJNjhtqj6dliCRWuomvtX0Ds=
   dependencies:
-    expo-core "~1.2.0"
+    expo-core "~2.0.0"
 
-expo-constants@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-constants/download/expo-constants-1.1.0.tgz#c5e34b1623096ea55fa270eee3e079409535cb36"
-  integrity sha1-xeNLFiMJbqVfonDu4+B5QJU1yzY=
+expo-constants@~2.0.0:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/expo-constants/download/expo-constants-2.0.1.tgz#f3090e206da7c580c8dbb16178f918a8110644c2"
+  integrity sha1-8wkOIG2nxYDI27FhePkYqBEGRMI=
   dependencies:
-    expo-constants-interface "~1.1.0"
-    expo-core "~1.2.0"
+    ua-parser-js "^0.7.19"
+    uuid "^3.3.2"
 
-expo-contacts@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-contacts/download/expo-contacts-1.1.0.tgz#2752cd90e67ff6570fb51ddc5504275e02007d89"
-  integrity sha1-J1LNkOZ/9lcPtR3cVQQnXgIAfYk=
+expo-contacts@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-contacts/download/expo-contacts-2.0.0.tgz#ea71d0b3734c33515a3e2ae8d7afa037ce7f3738"
+  integrity sha1-6nHQs3NMM1FaPiro16+gN85/Nzg=
   dependencies:
-    expo-core "~1.2.0"
+    expo-core "~2.0.0"
+    expo-errors "~1.0.0"
     uuid-js "^0.7.5"
 
-expo-core@~1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npm.taobao.org/expo-core/download/expo-core-1.2.0.tgz#c8fecf18b36a5b583bcb69a0227d4a6e45b56f17"
-  integrity sha1-yP7PGLNqW1g7y2mgIn1KbkW1bxc=
+expo-core@~2.0.0:
+  version "2.0.2"
+  resolved "https://registry.npm.taobao.org/expo-core/download/expo-core-2.0.2.tgz#61e1e5cc6c4341a834a0d7f37c68887cee8d971f"
+  integrity sha1-YeHlzGxDQag0oNfzfGiIfO6Nlx8=
 
-expo-face-detector-interface@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-face-detector-interface/download/expo-face-detector-interface-1.1.0.tgz#34157daea239da785b1a9e239ff064232c88046c"
-  integrity sha1-NBV9rqI52nhbGp4jn/BkIyyIBGw=
+expo-errors@~1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/expo-errors/download/expo-errors-1.0.0.tgz#0e212e6e10eb7e8c01eb59d79560ed2cdaaadd95"
+  integrity sha1-DiEubhDrfowB61nXlWDtLNqq3ZU=
   dependencies:
-    expo-core "~1.2.0"
+    expo-core "~2.0.0"
 
-expo-face-detector@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-face-detector/download/expo-face-detector-1.1.0.tgz#67a541569f375f001de603f75f01fed41453b6e0"
-  integrity sha1-Z6VBVp83XwAd5gP3XwH+1BRTtuA=
+expo-face-detector-interface@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-face-detector-interface/download/expo-face-detector-interface-2.0.0.tgz#ed93427ab1dc312444a9ef997753c26d57b53133"
+  integrity sha1-7ZNCerHcMSREqe+Zd1PCbVe1MTM=
   dependencies:
-    expo-core "~1.2.0"
-    expo-face-detector-interface "~1.1.0"
-    expo-permissions-interface "~1.2.0"
+    expo-core "~2.0.0"
 
-expo-file-system-interface@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-file-system-interface/download/expo-file-system-interface-1.1.0.tgz#167fc9d11992b9024ab990a1e90ed4c110f8cfb0"
-  integrity sha1-Fn/J0RmSuQJKuZCh6Q7UwRD4z7A=
+expo-face-detector@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-face-detector/download/expo-face-detector-2.0.0.tgz#d3f96038174d8de47cd0b6a33412ab488dfe7403"
+  integrity sha1-0/lgOBdNjeR80LajNBKrSI3+dAM=
   dependencies:
-    expo-core "~1.2.0"
+    expo-core "~2.0.0"
+    expo-face-detector-interface "~2.0.0"
+    expo-permissions-interface "~2.0.0"
 
-expo-file-system@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-file-system/download/expo-file-system-1.1.0.tgz#613bffc73974beca494e62323282b6b05ae374e0"
-  integrity sha1-YTv/xzl0vspJTmIyMoK2sFrjdOA=
+expo-file-system-interface@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-file-system-interface/download/expo-file-system-interface-2.0.0.tgz#610cb7ec797a65199fe5d04ba5d515aba95a3fb9"
+  integrity sha1-YQy37Hl6ZRmf5dBLpdUVq6laP7k=
   dependencies:
-    expo-core "~1.2.0"
-    expo-file-system-interface "~1.1.0"
+    expo-core "~2.0.0"
+
+expo-file-system@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-file-system/download/expo-file-system-2.0.0.tgz#96da55dd03dab88e4ae32bfd5237aaa810ab33f0"
+  integrity sha1-ltpV3QPauI5K4yv9UjeqqBCrM/A=
+  dependencies:
+    expo-core "~2.0.0"
+    expo-file-system-interface "~2.0.0"
     uuid-js "^0.7.5"
 
-expo-font-interface@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-font-interface/download/expo-font-interface-1.1.0.tgz#b9b028b562fbba48032cc16a83fad680fb1465fe"
-  integrity sha1-ubAotWL7ukgDLMFqg/rWgPsUZf4=
+expo-font-interface@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-font-interface/download/expo-font-interface-2.0.0.tgz#183d033029e41c2f92c1117425d1381dbb0dd452"
+  integrity sha1-GD0DMCnkHC+SwRF0JdE4HbsN1FI=
   dependencies:
-    expo-core "~1.2.0"
+    expo-core "~2.0.0"
 
-expo-font@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-font/download/expo-font-1.1.0.tgz#1ac97594b0b35814d030fc69a8ae1ccf32a66efa"
-  integrity sha1-Gsl1lLCzWBTQMPxpqK4czzKmbvo=
+expo-font@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-font/download/expo-font-2.0.0.tgz#0b1e21084a678ddb7fafd16a4b02dcd9bb325963"
+  integrity sha1-Cx4hCEpnjdt/r9FqSwLc2bsyWWM=
   dependencies:
-    expo-core "~1.2.0"
-    expo-font-interface "~1.1.0"
     invariant "^2.2.2"
 
-expo-gl-cpp@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-gl-cpp/download/expo-gl-cpp-1.1.0.tgz#b258a02e8d6f438e1f11201a9f09ec24472f5ee7"
-  integrity sha1-sligLo1vQ44fESAanwnsJEcvXuc=
+expo-gl-cpp@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-gl-cpp/download/expo-gl-cpp-2.0.0.tgz#65c3859f93ec16feafcd1124d86a5c8d463f96f7"
+  integrity sha1-ZcOFn5PsFv6vzREk2GpcjUY/lvc=
   dependencies:
-    expo-core "~1.2.0"
+    expo-core "~2.0.0"
 
-expo-gl@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-gl/download/expo-gl-1.1.0.tgz#02d67a0b02cc492e4ab387362b271765cfa4625f"
-  integrity sha1-AtZ6CwLMSS5Ks4c2KycXZc+kYl8=
+expo-gl@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-gl/download/expo-gl-2.0.0.tgz#c78f5c6934a8a6ca25e8b7655fa3498add7f5845"
+  integrity sha1-x49caTSopsol6LdlX6NJit1/WEU=
   dependencies:
-    expo-camera-interface "~1.1.0"
-    expo-core "~1.2.0"
-    expo-file-system-interface "~1.1.0"
-    expo-gl-cpp "~1.1.0"
+    prop-types "^15.6.2"
 
-expo-image-loader-interface@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-image-loader-interface/download/expo-image-loader-interface-1.1.0.tgz#f3fb98bb238db797562a0d3f2f156c32745d2bd1"
-  integrity sha1-8/uYuyONt5dWKg0/LxVsMnRdK9E=
+expo-google-sign-in@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-google-sign-in/download/expo-google-sign-in-2.0.0.tgz#f3352300b3f1f8625f5a2835b28910edd61e31db"
+  integrity sha1-8zUjALPx+GJfWig1sokQ7dYeMds=
   dependencies:
-    expo-core "~1.2.0"
-
-expo-local-authentication@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-local-authentication/download/expo-local-authentication-1.1.0.tgz#1caa377926309824317bb70c8e91ea246380416a"
-  integrity sha1-HKo3eSYwmCQxe7cMjpHqJGOAQWo=
-  dependencies:
-    expo-core "~1.2.0"
+    expo-errors "~1.0.0"
     invariant "^2.2.4"
 
-expo-localization@~1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/expo-localization/download/expo-localization-1.0.0.tgz#1bd8904632ab91e6f941ddf46b568e9c6df31f56"
-  integrity sha1-G9iQRjKrkeb5Qd30a1aOnG3zH1Y=
+expo-image-loader-interface@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-image-loader-interface/download/expo-image-loader-interface-2.0.0.tgz#3934f01c4ccdea40d4248110b7da234741abf9c8"
+  integrity sha1-OTTwHEzN6kDUJIEQt9ojR0Gr+cg=
   dependencies:
-    expo-core "~1.2.0"
+    expo-core "~2.0.0"
 
-expo-location@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-location/download/expo-location-1.1.0.tgz#880e17591f0a8de99ba2c640eb05a07559943771"
-  integrity sha1-iA4XWR8KjembosZA6wWgdVmUN3E=
+expo-local-authentication@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-local-authentication/download/expo-local-authentication-2.0.0.tgz#b16763242ab0ebff902e4c4545052d114ecf3d4a"
+  integrity sha1-sWdjJCqw6/+QLkxFRQUtEU7PPUo=
+  dependencies:
+    expo-core "~2.0.0"
+    invariant "^2.2.4"
+
+expo-localization@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-localization/download/expo-localization-2.0.0.tgz#d7b9b44585d5bb70691c6b62ebde6b00d8535a0e"
+  integrity sha1-17m0RYXVu3BpHGti695rANhTWg4=
+  dependencies:
+    expo-core "~2.0.0"
+    moment "^2.22.2"
+    moment-timezone "^0.5.23"
+    rtl-detect "^1.0.2"
+
+expo-location@~2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/expo-location/download/expo-location-2.0.1.tgz#44d5865640ce28a1683dec8ff9269e786b86aa2e"
+  integrity sha1-RNWGVkDOKKFoPeyP+SaeeGuGqi4=
   dependencies:
     invariant "^2.2.4"
 
-expo-media-library@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-media-library/download/expo-media-library-1.1.0.tgz#2ad7b8a914cdc930004a889e27b83c84dec371ff"
-  integrity sha1-Kte4qRTNyTAASoieJ7g8hN7Dcf8=
+expo-media-library@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-media-library/download/expo-media-library-2.0.0.tgz#24ed4aa99a014a6be1284a5e139eb39d22d63aa5"
+  integrity sha1-JO1KqZoBSmvhKEpeE56znSLWOqU=
   dependencies:
-    expo-core "~1.2.0"
-    expo-permissions-interface "~1.2.0"
+    expo-core "~2.0.0"
+    expo-errors "~1.0.0"
+    expo-permissions-interface "~2.0.0"
 
-expo-payments-stripe@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-payments-stripe/download/expo-payments-stripe-1.1.0.tgz#391f9f42ce581bae66b7964ee2b40c145ab7b0fe"
-  integrity sha1-OR+fQs5YG65mt5ZO4rQMFFq3sP4=
+expo-payments-stripe@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-payments-stripe/download/expo-payments-stripe-2.0.0.tgz#31cc9f493c2332321ae9260b6c36385a966e79a3"
+  integrity sha1-McyfSTwjMjIa6SYLbDY4WpZueaM=
   dependencies:
-    expo-core "~1.2.0"
+    expo-core "~2.0.0"
 
-expo-permissions-interface@~1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npm.taobao.org/expo-permissions-interface/download/expo-permissions-interface-1.2.0.tgz#9c65f66f3ff90f2f9ed79d9292ec3c788ae9b85e"
-  integrity sha1-nGX2bz/5Dy+e152Skuw8eIrpuF4=
+expo-permissions-interface@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-permissions-interface/download/expo-permissions-interface-2.0.0.tgz#563fd815925fd472a1b04f292afc9bef77f14774"
+  integrity sha1-Vj/YFZJf1HKhsE8pKvyb73fxR3Q=
   dependencies:
-    expo-core "~1.2.0"
+    expo-core "~2.0.0"
 
-expo-permissions@~1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npm.taobao.org/expo-permissions/download/expo-permissions-1.2.0.tgz#c5bd214381881635b93d066872d0427e9705d766"
-  integrity sha1-xb0hQ4GIFjW5PQZoctBCfpcF12Y=
+expo-permissions@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-permissions/download/expo-permissions-2.0.0.tgz#31421819a2e6ee44ed9161387a7bf4259c73426f"
+  integrity sha1-MUIYGaLm7kTtkWE4env0JZxzQm8=
   dependencies:
-    expo-core "~1.2.0"
-    expo-permissions-interface "~1.2.0"
+    expo-core "~2.0.0"
+    expo-permissions-interface "~2.0.0"
 
-expo-print@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-print/download/expo-print-1.1.0.tgz#75a3563098b9af5c79c0507725015f1d1870476e"
-  integrity sha1-daNWMJi5r1x5wFB3JQFfHRhwR24=
+expo-print@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-print/download/expo-print-2.0.0.tgz#d072825a00a11d5a06a81788d5d5a252141315fa"
+  integrity sha1-0HKCWgChHVoGqBeI1dWiUhQTFfo=
   dependencies:
     babel-preset-expo "^5.0.0"
-    expo-core "~1.2.0"
+    expo-core "~2.0.0"
+    expo-errors "~1.0.0"
 
-expo-react-native-adapter@~1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npm.taobao.org/expo-react-native-adapter/download/expo-react-native-adapter-1.2.0.tgz#f175b9fcd29cb470b770653131febcd2c89b33d2"
-  integrity sha1-8XW5/NKctHC3cGUxMf680sibM9I=
+expo-react-native-adapter@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-react-native-adapter/download/expo-react-native-adapter-2.0.0.tgz#0a8f74e7f79116b2f28eec79deab236c2ee0611f"
+  integrity sha1-Co905/eRFrLyjux53qsjbC7gYR8=
   dependencies:
-    expo-core "~1.2.0"
-    expo-image-loader-interface "~1.1.0"
-    expo-permissions-interface "~1.2.0"
+    expo-image-loader-interface "~2.0.0"
+    expo-permissions-interface "~2.0.0"
+    invariant "^2.2.4"
     lodash.omit "^4.5.0"
     lodash.pick "^4.4.0"
     prop-types "^15.6.1"
 
-expo-sensors-interface@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-sensors-interface/download/expo-sensors-interface-1.1.0.tgz#73e46cfc9deb8c9b48bc224d2cbc7ed56b216889"
-  integrity sha1-c+Rs/J3rjJtIvCJNLLx+1WshaIk=
+expo-sensors-interface@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-sensors-interface/download/expo-sensors-interface-2.0.0.tgz#8b94051e1996dae8ef90a9dafc8d32dc7b3c0af3"
+  integrity sha1-i5QFHhmW2ujvkKna/I0y3Hs8CvM=
   dependencies:
-    expo-core "~1.2.0"
+    expo-core "~2.0.0"
 
-expo-sensors@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-sensors/download/expo-sensors-1.1.0.tgz#b2d5ed1369e7826448724a85e14b5aaebfa46276"
-  integrity sha1-stXtE2nngmRIckqF4Utarr+kYnY=
+expo-sensors@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-sensors/download/expo-sensors-2.0.0.tgz#29fa73958192f2ec9d9e51dfd01630db96038bab"
+  integrity sha1-KfpzlYGS8uydnlHf0BYw25YDi6s=
   dependencies:
-    expo-core "~1.2.0"
-    expo-sensors-interface "~1.1.0"
     invariant "^2.2.4"
 
-expo-sms@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/expo-sms/download/expo-sms-1.1.0.tgz#b04874ffdac9ebff209d6842b5f5f314ab05fe92"
-  integrity sha1-sEh0/9rJ6/8gnWhCtfXzFKsF/pI=
+expo-sms@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/expo-sms/download/expo-sms-2.0.0.tgz#0347743435dda5ef8754e692fa92d0127cd85bfd"
+  integrity sha1-A0d0NDXdpe+HVOaS+pLQEnzYW/0=
   dependencies:
-    expo-core "~1.2.0"
-    expo-permissions-interface "~1.2.0"
+    expo-core "~2.0.0"
+    expo-permissions-interface "~2.0.0"
 
-expo@^31.0.2:
-  version "31.0.6"
-  resolved "https://registry.npm.taobao.org/expo/download/expo-31.0.6.tgz#3e1d8d617c959e7218aabf9ff523703183dfdbaf"
-  integrity sha1-Ph2NYXyVnnIYqr+f9SNwMYPf268=
+expo-task-manager-interface@~1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/expo-task-manager-interface/download/expo-task-manager-interface-1.0.0.tgz#898535ace8fca441cdd84ec8dd4b2ce1f29919e2"
+  integrity sha1-iYU1rOj8pEHN2E7I3Uss4fKZGeI=
+  dependencies:
+    expo-core "~2.0.0"
+
+expo-task-manager@~1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/expo-task-manager/download/expo-task-manager-1.0.0.tgz#fec44602f35915ab7be082d7709e928e136b2bf8"
+  integrity sha1-/sRGAvNZFat74ILXcJ6SjhNrK/g=
+  dependencies:
+    expo-core "~2.0.0"
+    expo-errors "~1.0.0"
+    expo-task-manager-interface "~1.0.0"
+
+expo@^32.0.0:
+  version "32.0.6"
+  resolved "https://registry.npm.taobao.org/expo/download/expo-32.0.6.tgz#71ef60ac5293b9ca8f2219584bc6add8a975714b"
+  integrity sha1-ce9grFKTucqPIhlYS8at2Kl1cUs=
   dependencies:
     "@babel/runtime" "^7.1.2"
-    "@expo/vector-icons" "^8.0.0"
+    "@expo/vector-icons" "~9.0.0"
     "@expo/websql" "^1.0.1"
     "@types/fbemitter" "^2.0.32"
     "@types/invariant" "^2.2.29"
@@ -2229,54 +2323,62 @@ expo@^31.0.2:
     "@types/websql" "^0.0.27"
     babel-preset-expo "^5.0.0"
     cross-spawn "^6.0.5"
-    expo-ads-admob "~1.1.0"
-    expo-analytics-segment "~1.1.0"
-    expo-asset "~1.1.1"
-    expo-barcode-scanner "~1.1.0"
-    expo-barcode-scanner-interface "~1.1.0"
-    expo-camera "~1.2.0"
-    expo-camera-interface "~1.1.0"
-    expo-constants "~1.1.0"
-    expo-constants-interface "~1.1.0"
-    expo-contacts "~1.1.0"
-    expo-core "~1.2.0"
-    expo-face-detector "~1.1.0"
-    expo-face-detector-interface "~1.1.0"
-    expo-file-system "~1.1.0"
-    expo-file-system-interface "~1.1.0"
-    expo-font "~1.1.0"
-    expo-font-interface "~1.1.0"
-    expo-gl "~1.1.0"
-    expo-image-loader-interface "~1.1.0"
-    expo-local-authentication "~1.1.0"
-    expo-localization "~1.0.0"
-    expo-location "~1.1.0"
-    expo-media-library "~1.1.0"
-    expo-payments-stripe "~1.1.0"
-    expo-permissions "~1.2.0"
-    expo-permissions-interface "~1.2.0"
-    expo-print "~1.1.0"
-    expo-react-native-adapter "~1.2.0"
-    expo-sensors "~1.1.0"
-    expo-sensors-interface "~1.1.0"
-    expo-sms "~1.1.0"
+    expo-ads-admob "~2.0.0"
+    expo-analytics-segment "~2.0.0"
+    expo-app-auth "~2.0.0"
+    expo-app-loader-provider "~1.0.0"
+    expo-asset "~2.0.0"
+    expo-background-fetch "~1.0.0"
+    expo-barcode-scanner "~2.0.0"
+    expo-barcode-scanner-interface "~2.0.0"
+    expo-camera "~2.0.0"
+    expo-camera-interface "~2.0.0"
+    expo-constants "~2.0.0"
+    expo-constants-interface "~2.0.0"
+    expo-contacts "~2.0.0"
+    expo-core "~2.0.0"
+    expo-errors "~1.0.0"
+    expo-face-detector "~2.0.0"
+    expo-face-detector-interface "~2.0.0"
+    expo-file-system "~2.0.0"
+    expo-file-system-interface "~2.0.0"
+    expo-font "~2.0.0"
+    expo-font-interface "~2.0.0"
+    expo-gl "~2.0.0"
+    expo-gl-cpp "~2.0.0"
+    expo-google-sign-in "~2.0.0"
+    expo-image-loader-interface "~2.0.0"
+    expo-local-authentication "~2.0.0"
+    expo-localization "~2.0.0"
+    expo-location "~2.0.1"
+    expo-media-library "~2.0.0"
+    expo-payments-stripe "~2.0.0"
+    expo-permissions "~2.0.0"
+    expo-permissions-interface "~2.0.0"
+    expo-print "~2.0.0"
+    expo-react-native-adapter "~2.0.0"
+    expo-sensors "~2.0.0"
+    expo-sensors-interface "~2.0.0"
+    expo-sms "~2.0.0"
+    expo-task-manager "~1.0.0"
     fbemitter "^2.1.1"
     invariant "^2.2.2"
+    lodash.filter "^4.6.0"
     lodash.map "^4.6.0"
     lodash.omit "^4.5.0"
     lodash.zipobject "^4.1.3"
     lottie-react-native "2.5.0"
     md5-file "^3.2.3"
     nullthrows "^1.1.0"
-    pretty-format "^21.2.1"
+    pretty-format "^23.6.0"
     prop-types "^15.6.0"
     qs "^6.5.0"
     react-native-branch "2.2.5"
-    react-native-gesture-handler "1.0.9"
+    react-native-gesture-handler "~1.0.14"
     react-native-maps expo/react-native-maps#v0.22.1-exp.0
-    react-native-reanimated "1.0.0-alpha.10"
-    react-native-screens "1.0.0-alpha.15"
-    react-native-svg "8.0.8"
+    react-native-reanimated "1.0.0-alpha.11"
+    react-native-screens "1.0.0-alpha.22"
+    react-native-svg "8.0.10"
     react-native-view-shot "2.5.0"
     serialize-error "^2.1.0"
     uuid-js "^0.7.5"
@@ -2343,6 +2445,16 @@ fancy-log@^1.3.2:
     color-support "^1.1.3"
     parse-node-version "^1.0.0"
     time-stamp "^1.0.0"
+
+fast-deep-equal@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/fast-deep-equal/download/fast-deep-equal-2.0.1.tgz#7b05218ddf9667bf7f370bf7fdb2cb15fdd0aa49"
+  integrity sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
+
+fast-json-stable-stringify@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/fast-json-stable-stringify/download/fast-json-stable-stringify-2.0.0.tgz#d5142c0caee6b1189f87d3a76111064f86c8bbf2"
+  integrity sha1-1RQsDK7msRifh9OnYREGT4bIu/I=
 
 fb-watchman@^2.0.0:
   version "2.0.0"
@@ -3081,6 +3193,11 @@ json-parse-better-errors@^1.0.1:
   resolved "https://registry.npm.taobao.org/json-parse-better-errors/download/json-parse-better-errors-1.0.2.tgz#bb867cfb3450e69107c131d1c514bab3dc8bcaa9"
   integrity sha1-u4Z8+zRQ5pEHwTHRxRS6s9yLyqk=
 
+json-schema-traverse@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.npm.taobao.org/json-schema-traverse/download/json-schema-traverse-0.4.1.tgz#69f6a87d9513ab8bb8fe63bdb0979c448e684660"
+  integrity sha1-afaofZUTq4u4/mO9sJecRI5oRmA=
+
 json-stable-stringify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/json-stable-stringify/download/json-stable-stringify-1.0.1.tgz#9a759d39c5f2ff503fd5300646ed445f88c4f9af"
@@ -3092,6 +3209,13 @@ json5@^0.5.1:
   version "0.5.1"
   resolved "https://registry.npm.taobao.org/json5/download/json5-0.5.1.tgz#1eade7acc012034ad84e2396767ead9fa5495821"
   integrity sha1-Hq3nrMASA0rYTiOWdn6tn6VJWCE=
+
+json5@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npm.taobao.org/json5/download/json5-1.0.1.tgz#779fb0018604fa854eacbf6252180d83543e3dbe"
+  integrity sha1-d5+wAYYE+oVOrL9iUhgNg1Q+Pb4=
+  dependencies:
+    minimist "^1.2.0"
 
 json5@^2.1.0:
   version "2.1.0"
@@ -3172,6 +3296,15 @@ load-json-file@^2.0.0:
     pify "^2.0.0"
     strip-bom "^3.0.0"
 
+loader-utils@^1.1.0:
+  version "1.2.3"
+  resolved "https://registry.npm.taobao.org/loader-utils/download/loader-utils-1.2.3.tgz#1ff5dc6911c9f0a062531a4c04b609406108c2c7"
+  integrity sha1-H/XcaRHJ8KBiUxpMBLYJQGEIwsc=
+  dependencies:
+    big.js "^5.2.2"
+    emojis-list "^2.0.0"
+    json5 "^1.0.1"
+
 locate-path@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/locate-path/download/locate-path-2.0.0.tgz#2b568b265eec944c6d9c0de9c3dbbbca0354cd8e"
@@ -3187,6 +3320,11 @@ locate-path@^3.0.0:
   dependencies:
     p-locate "^3.0.0"
     path-exists "^3.0.0"
+
+lodash.filter@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.npm.taobao.org/lodash.filter/download/lodash.filter-4.6.0.tgz#668b1d4981603ae1cc5a6fa760143e480b4c4ace"
+  integrity sha1-ZosdSYFgOuHMWm+nYBQ+SAtMSs4=
 
 lodash.map@^4.6.0:
   version "4.6.0"
@@ -3640,6 +3778,11 @@ mime@^1.3.4:
   resolved "https://registry.npm.taobao.org/mime/download/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
   integrity sha1-Ms2eXGRVO9WNGaVor0Uqz/BJgbE=
 
+mime@^2.0.3:
+  version "2.4.2"
+  resolved "https://registry.npm.taobao.org/mime/download/mime-2.4.2.tgz#ce5229a5e99ffc313abac806b482c10e7ba6ac78"
+  integrity sha1-zlIppemf/DE6usgGtILBDnumrHg=
+
 mimic-fn@^1.0.0:
   version "1.2.0"
   resolved "https://registry.npm.taobao.org/mimic-fn/download/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
@@ -3721,6 +3864,18 @@ mobx@^5.9.4:
   version "5.9.4"
   resolved "https://registry.npm.taobao.org/mobx/download/mobx-5.9.4.tgz#1dee92aba33f67b7baeeb679e3bd376a12e55812"
   integrity sha1-He6Sq6M/Z7e67rZ54703ahLlWBI=
+
+moment-timezone@^0.5.23:
+  version "0.5.25"
+  resolved "https://registry.npm.taobao.org/moment-timezone/download/moment-timezone-0.5.25.tgz#a11bfa2f74e088327f2cd4c08b3e7bdf55957810"
+  integrity sha1-oRv6L3TgiDJ/LNTAiz5731WVeBA=
+  dependencies:
+    moment ">= 2.9.0"
+
+"moment@>= 2.9.0", moment@^2.22.2:
+  version "2.24.0"
+  resolved "https://registry.npm.taobao.org/moment/download/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
+  integrity sha1-DQVdU/UFKqZTyfbraLtdEr9cK1s=
 
 morgan@^1.9.0:
   version "1.9.1"
@@ -4255,15 +4410,7 @@ preserve@^0.2.0:
   resolved "https://registry.npm.taobao.org/preserve/download/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
   integrity sha1-gV7R9uvGWSb4ZbMQwHE7yzMVzks=
 
-pretty-format@^21.2.1:
-  version "21.2.1"
-  resolved "https://registry.npm.taobao.org/pretty-format/download/pretty-format-21.2.1.tgz#ae5407f3cf21066cd011aa1ba5fce7b6a2eddb36"
-  integrity sha1-rlQH888hBmzQEaobpfzntqLt2zY=
-  dependencies:
-    ansi-regex "^3.0.0"
-    ansi-styles "^3.2.0"
-
-pretty-format@^23.4.1:
+pretty-format@^23.4.1, pretty-format@^23.6.0:
   version "23.6.0"
   resolved "https://registry.npm.taobao.org/pretty-format/download/pretty-format-23.6.0.tgz#5eaac8eeb6b33b987b7fe6097ea6a8a146ab5760"
   integrity sha1-XqrI7razO5h7f+YJfqaooUarV2A=
@@ -4319,6 +4466,11 @@ pump@^3.0.0:
   dependencies:
     end-of-stream "^1.1.0"
     once "^1.3.1"
+
+punycode@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.npm.taobao.org/punycode/download/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
+  integrity sha1-tYsBCsQMIsVldhbI0sLALHv0eew=
 
 qs@^6.5.0:
   version "6.7.0"
@@ -4391,23 +4543,28 @@ react-native-branch@2.2.5:
   resolved "https://registry.npm.taobao.org/react-native-branch/download/react-native-branch-2.2.5.tgz#4074dd63b4973e6397d9ce50e97b57c77a518e9d"
   integrity sha1-QHTdY7SXPmOX2c5Q6XtXx3pRjp0=
 
-react-native-gesture-handler@1.0.9:
-  version "1.0.9"
-  resolved "https://registry.npm.taobao.org/react-native-gesture-handler/download/react-native-gesture-handler-1.0.9.tgz#ddec4d19d51cb6fb54df6eca792ebd76aaef083f"
-  integrity sha1-3exNGdUctvtU327KeS69dqrvCD8=
+react-native-gesture-handler@~1.0.14:
+  version "1.0.17"
+  resolved "https://registry.npm.taobao.org/react-native-gesture-handler/download/react-native-gesture-handler-1.0.17.tgz#a046f371f277092157fc2781323d35a02a93daaf"
+  integrity sha1-oEbzcfJ3CSFX/CeBMj01oCqT2q8=
   dependencies:
     hoist-non-react-statics "^2.3.1"
     invariant "^2.2.2"
     prop-types "^15.5.10"
 
-react-native-maps@expo/react-native-maps#v0.22.1-exp.0:
+react-native-maps@*:
+  version "0.24.2"
+  resolved "https://registry.npm.taobao.org/react-native-maps/download/react-native-maps-0.24.2.tgz#19974f967cb0c2e24dab74ca879118e0932571b2"
+  integrity sha1-GZdPlnywwuJNq3TKh5EY4JMlcbI=
+
+"react-native-maps@github:expo/react-native-maps#v0.22.1-exp.0":
   version "0.22.1"
   resolved "https://codeload.github.com/expo/react-native-maps/tar.gz/e6f98ff7272e5d0a7fe974a41f28593af2d77bb2"
 
-react-native-reanimated@1.0.0-alpha.10:
-  version "1.0.0-alpha.10"
-  resolved "https://registry.npm.taobao.org/react-native-reanimated/download/react-native-reanimated-1.0.0-alpha.10.tgz#e9e6fb35a2cf52fdc912b9fbc76f34f80698e530"
-  integrity sha1-6eb7NaLPUv3JErn7x280+AaY5TA=
+react-native-reanimated@1.0.0-alpha.11:
+  version "1.0.0-alpha.11"
+  resolved "https://registry.npm.taobao.org/react-native-reanimated/download/react-native-reanimated-1.0.0-alpha.11.tgz#b78c839bae878d149561b56a3c750414957ea86d"
+  integrity sha1-t4yDm66HjRSVYbVqPHUEFJV+qG0=
 
 react-native-safe-area-view@^0.13.0:
   version "0.13.1"
@@ -4423,12 +4580,7 @@ react-native-safe-module@^1.1.0:
   dependencies:
     dedent "^0.6.0"
 
-react-native-screens@1.0.0-alpha.15:
-  version "1.0.0-alpha.15"
-  resolved "https://registry.npm.taobao.org/react-native-screens/download/react-native-screens-1.0.0-alpha.15.tgz#5b5a0041310b46f12048fda1908d52e7290ec18f"
-  integrity sha1-W1oAQTELRvEgSP2hkI1S5ykOwY8=
-
-"react-native-screens@^1.0.0 || ^1.0.0-alpha":
+react-native-screens@1.0.0-alpha.22, "react-native-screens@^1.0.0 || ^1.0.0-alpha":
   version "1.0.0-alpha.22"
   resolved "https://registry.npm.taobao.org/react-native-screens/download/react-native-screens-1.0.0-alpha.22.tgz#7a120377b52aa9bbb94d0b8541a014026be9289b"
   integrity sha1-ehIDd7Uqqbu5TQuFQaAUAmvpKJs=
@@ -4443,10 +4595,15 @@ react-native-scripts@^2.0.1:
     cross-spawn "^5.0.1"
     minimist "^1.2.0"
 
-react-native-svg@8.0.8:
-  version "8.0.8"
-  resolved "https://registry.npm.taobao.org/react-native-svg/download/react-native-svg-8.0.8.tgz#5d4c636751d9db2d98a9b3cfc4ef45c4eac65d60"
-  integrity sha1-XUxjZ1HZ2y2YqbPPxO9FxOrGXWA=
+react-native-svg@*:
+  version "9.4.0"
+  resolved "https://registry.npm.taobao.org/react-native-svg/download/react-native-svg-9.4.0.tgz#e428e0eae55aebd2355f1ff4f22675dad4611960"
+  integrity sha1-5Cjg6uVa69I1Xx/08iZ12tRhGWA=
+
+react-native-svg@8.0.10:
+  version "8.0.10"
+  resolved "https://registry.npm.taobao.org/react-native-svg/download/react-native-svg-8.0.10.tgz#b07e2342d1486220f5fda1a584e316e7d2d1f392"
+  integrity sha1-sH4jQtFIYiD1/aGlhOMW59LR85I=
   dependencies:
     color "^2.0.1"
     lodash "^4.16.6"
@@ -4799,6 +4956,11 @@ rsvp@^3.3.3:
   resolved "https://registry.npm.taobao.org/rsvp/download/rsvp-3.6.2.tgz#2e96491599a96cde1b515d5674a8f7a91452926a"
   integrity sha1-LpZJFZmpbN4bUV1WdKj3qRRSkmo=
 
+rtl-detect@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/rtl-detect/download/rtl-detect-1.0.2.tgz#8eca316f5c6563d54df4e406171dd7819adda67f"
+  integrity sha1-jsoxb1xlY9VN9OQGFx3XgZrdpn8=
+
 run-async@^2.2.0:
   version "2.3.0"
   resolved "https://registry.npm.taobao.org/run-async/download/run-async-2.3.0.tgz#0371ab4ae0bdd720d4166d7dfda64ff7a445a6c0"
@@ -4875,6 +5037,15 @@ scheduler@^0.13.6:
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
+
+schema-utils@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/schema-utils/download/schema-utils-1.0.0.tgz#0b79a93204d7b600d4b2850d1f66c2a34951c770"
+  integrity sha1-C3mpMgTXtgDUsoUNH2bCo0lRx3A=
+  dependencies:
+    ajv "^6.1.0"
+    ajv-errors "^1.0.0"
+    ajv-keywords "^3.1.0"
 
 "semver@2 || 3 || 4 || 5", semver@^5.0.3, semver@^5.1.0, semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semver@^5.5.1, semver@^5.6.0:
   version "5.7.0"
@@ -5379,7 +5550,7 @@ typescript@^3.4.5:
   resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.4.5.tgz#2d2618d10bb566572b8d7aad5180d84257d70a99"
   integrity sha1-LSYY0Qu1ZlcrjXqtUYDYQlfXCpk=
 
-ua-parser-js@^0.7.18:
+ua-parser-js@^0.7.18, ua-parser-js@^0.7.19:
   version "0.7.19"
   resolved "https://registry.npm.taobao.org/ua-parser-js/download/ua-parser-js-0.7.19.tgz#94151be4c0a7fb1d001af7022fdaca4642659e4b"
   integrity sha1-lBUb5MCn+x0AGvcCL9rKRkJlnks=
@@ -5448,6 +5619,13 @@ unset-value@^1.0.0:
     has-value "^0.3.1"
     isobject "^3.0.0"
 
+uri-js@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.npm.taobao.org/uri-js/download/uri-js-4.2.2.tgz#94c540e1ff772956e2299507c010aea6c8838eb0"
+  integrity sha1-lMVA4f93KVbiKZUHwBCupsiDjrA=
+  dependencies:
+    punycode "^2.1.0"
+
 uri-parser@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/uri-parser/download/uri-parser-1.0.1.tgz#3307ebb50f279c11198ad09214bdaf24e29735b2"
@@ -5462,6 +5640,15 @@ url-join@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npm.taobao.org/url-join/download/url-join-4.0.0.tgz#4d3340e807d3773bda9991f8305acdcc2a665d2a"
   integrity sha1-TTNA6AfTdzvamZH4MFrNzCpmXSo=
+
+url-loader@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.npm.taobao.org/url-loader/download/url-loader-1.1.2.tgz#b971d191b83af693c5e3fea4064be9e1f2d7f8d8"
+  integrity sha1-uXHRkbg69pPF4/6kBkvp4fLX+Ng=
+  dependencies:
+    loader-utils "^1.1.0"
+    mime "^2.0.3"
+    schema-utils "^1.0.0"
 
 use@^3.1.0:
   version "3.1.1"

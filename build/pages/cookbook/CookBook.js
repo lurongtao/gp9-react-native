@@ -29,7 +29,7 @@ let CookBook = class CookBook extends Component {
     render() {
         return (React.createElement(ScrollView, null,
             React.createElement(View, { style: styles.swiperWrapper },
-                React.createElement(Swiper, { autoplay: true, showsPagination: false }, this.props.store.list.slice(0, 5).map((value) => {
+                React.createElement(Swiper, { autoplay: true, showsPagination: false }, this.props.store.list.list.slice(0, 5).map((value) => {
                     return (React.createElement(View, { style: styles.swiperSlide, key: value.id },
                         React.createElement(Image, { source: { uri: value.img }, style: { width: '100%', height: '100%' } })));
                 }))),
@@ -58,7 +58,7 @@ let CookBook = class CookBook extends Component {
         });
     }
     _onPressHotCate(i) {
-        this.props.navigation.navigate('HotList', { i });
+        this.props.navigation.navigate('HotList', { id: i });
     }
 };
 CookBook = __decorate([

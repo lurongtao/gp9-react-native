@@ -28,7 +28,7 @@ export default class List extends React.Component<Props, State> {
   }
   render () {
     let {start, count} = this.props
-    let data = this.props.store.list.slice(start, count)
+    let data = this.props.store.list.list.slice(start, count)
     return (
       <View style={styles.better}>
         {
@@ -62,7 +62,7 @@ export default class List extends React.Component<Props, State> {
     this.setState({
       isRefresh: true
     })
-    await this.props.store.getRefreshData()
+    await this.props.store.list.getRefreshData()
     this.setState({
       isRefresh: false
     })

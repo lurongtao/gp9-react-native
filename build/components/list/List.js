@@ -25,7 +25,7 @@ let List = class List extends React.Component {
     }
     render() {
         let { start, count } = this.props;
-        let data = this.props.store.list.slice(start, count);
+        let data = this.props.store.list.list.slice(start, count);
         return (React.createElement(View, { style: styles.better }, React.createElement(FlatList, { data: data, numColumns: 2, refreshing: this.state.isRefresh, onRefresh: this.handleRefresh.bind(this), columnWrapperStyle: styles.betterWrapper, keyExtractor: (item, index) => item.id, renderItem: ({ item, index }) => {
                 return (React.createElement(View, { style: { paddingRight: 10, width: '50%' } },
                     React.createElement(View, { style: styles.betterImgWrapper },
@@ -45,7 +45,7 @@ let List = class List extends React.Component {
             this.setState({
                 isRefresh: true
             });
-            yield this.props.store.getRefreshData();
+            yield this.props.store.list.getRefreshData();
             this.setState({
                 isRefresh: false
             });

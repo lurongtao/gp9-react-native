@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { View, WebView } from 'react-native';
 export default class Map extends Component {
     render() {
-        return (React.createElement(View, null,
-            React.createElement(Text, null, " map ")));
+        return (React.createElement(View, { style: { height: '100%', width: '100%' } },
+            React.createElement(WebView, { style: { flex: 1 }, source: { uri: 'https://map.baidu.com' } }),
+            React.createElement(WebView, { source: { uri: 'https://www.baidu.com' }, style: { flex: 1 } })));
     }
 }
 //# sourceMappingURL=Map.js.map

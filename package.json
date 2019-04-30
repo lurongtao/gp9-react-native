@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@types/react-native-tab-navigator": "^0.3.3",
-    "expo": "^31.0.2",
+    "expo": "^32.0.0",
     "mobx": "^5.9.4",
     "mobx-react": "^5.4.3",
     "react": "^16.6.3",
@@ -30,9 +30,9 @@
     "react-navigation": "^3.9.1"
   },
   "devDependencies": {
-    "@types/expo": "^31.0.1",
-    "@types/react": "^16.8.14",
-    "@types/react-native": "^0.57.15",
+    "@types/expo": "^32.0.11",
+    "@types/react": "^16.8.15",
+    "@types/react-native": "^0.57.51",
     "babel-preset-expo": "^5.0.0",
     "concurrently": "^4.1.0",
     "react-native-scripts": "^2.0.1",
